@@ -19,4 +19,8 @@ export class AppComponent {
     {title: 'Want to learn Angular components', text: 'Learn Components', id:1},
     {title: 'Next block', text: 'components', id:2}
   ]
+
+  updatePosts(post: Post){
+    this.posts.unshift(post);
+  }
 }
